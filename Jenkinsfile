@@ -6,5 +6,10 @@ pipeline {
         echo 'Jenkins Minute Pipeline'
       }
     }
+    stage('buildone') {
+      steps {
+        echo 'goodmorning'
+      }
+    }
   }
 }
