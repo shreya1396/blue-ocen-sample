@@ -16,5 +16,10 @@ pipeline {
         echo 'goodmorning'
       }
     }
+    stage('buildtwo') {
+      steps {
+        echo 'have a nice day'
+      }
+    }
   }
 }
