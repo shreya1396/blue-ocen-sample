@@ -5,9 +5,6 @@ pipeline {
     }
 
   }
-  options {
-        timeout(time: 1, unit: 'HOURS') 
-    }
   stages {
     stage('Build') {
       steps {
@@ -19,5 +16,8 @@ pipeline {
         echo 'goodmorning'
       }
     }
+  }
+  options {
+    timeout(time: 1, unit: 'HOURS')
   }
 }
