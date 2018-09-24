@@ -12,11 +12,11 @@ def call(body) {
 	
 
 	            try {
-	                stage ('Clone') {
+	                stage ('Cloning done') {
 	                    checkout scm
 	                }
-	                stage ('Build') {
-	                    sh "echo 'building ${config.projectName} ...'"
+	                stage ('Build done') {
+	                    sh "echo 'build completed'"
 	                }
                } catch (err) {
                 currentBuild.result = 'FAILED'
