@@ -15,7 +15,6 @@
                 }
                 stage ('Build') {
                     sh "echo 'building ${config.projectName} ...'"
-                    sh "apt-get update"
                  
                 }
                 stage ('Tests') {
