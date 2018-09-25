@@ -20,9 +20,7 @@ pipeline {
       steps {
         echo 'have a nice day'
       }
+      }  
     }
-  }
-  options {
-    timeout(time: 1, unit: 'HOURS')
   }
 }
