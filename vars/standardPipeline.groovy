@@ -18,9 +18,7 @@
                  
                 }
                 stage ('Tests') {
-                    parallel 'static': {
-                        sh "echo 'shell scripts to run static tests...'"
-                    },
+                    parallel
                     'unit': {
                         sh "echo 'shell scripts to run unit tests...'"
                     },
