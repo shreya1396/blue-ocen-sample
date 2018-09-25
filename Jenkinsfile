@@ -1,8 +1,3 @@
-@Library("jenkins-shared-library") _
-    example {
-        projectName = "Project1"
-        serverDomain = "Project1 Server Domain"
-    }
 pipeline {
   agent {
     docker {
@@ -19,6 +14,11 @@ pipeline {
     stage('buildone') {
       steps {
         echo 'goodmorning'
+      }
+    }
+    stage('buildtwo') {
+      steps {
+        echo 'have a nice day'
       }
     }
   }
